@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lands",
+  "info": {
+    "name": "lands",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "biginteger"
+    }
+  }
+}
