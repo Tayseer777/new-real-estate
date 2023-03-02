@@ -12,11 +12,53 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Governorate": {
       "type": "string"
     },
-    "age": {
+    "city": {
+      "type": "string"
+    },
+    "plot_name": {
+      "type": "string"
+    },
+    "plot_nunber": {
       "type": "biginteger"
+    },
+    "land_number": {
+      "type": "biginteger"
+    },
+    "price": {
+      "type": "biginteger"
+    },
+    "total_shares": {
+      "type": "biginteger"
+    },
+    "total_owned_shares": {
+      "type": "integer"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Governorate"
+    },
+    "area": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "total_area": {
+      "type": "string"
+    },
+    "total_owned_area": {
+      "type": "string"
+    },
+    "dealers": {
+      "via": "lands",
+      "collection": "dealers"
+    },
+    "owners": {
+      "via": "lands",
+      "collection": "owners"
     }
   }
 }

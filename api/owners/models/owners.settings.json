@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "owners",
+  "info": {
+    "name": "Owners",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "owner_name": {
+      "type": "string"
+    },
+    "owner_phone_number": {
+      "type": "biginteger"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "lands": {
+      "collection": "lands",
+      "via": "owners",
+      "dominant": true
+    }
+  }
+}

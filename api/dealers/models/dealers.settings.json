@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dealers",
+  "info": {
+    "name": "Dealers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dealer_name": {
+      "type": "string"
+    },
+    "dealer_phone_number": {
+      "type": "biginteger"
+    },
+    "lands": {
+      "collection": "lands",
+      "via": "dealers",
+      "dominant": true
+    }
+  }
+}
